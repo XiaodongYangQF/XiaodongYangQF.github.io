@@ -87,7 +87,7 @@ author:
   employer         : "UCD Michael Smurfit Graduate Business School"
   pubmed           : 
   googlescholar    : 
-  email            : "boris.meinardus@gmail.com"
+  email            : "yangxiaodong993993@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -109,11 +109,11 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "BorisMeinardus"
+  twitter          : # "BorisMeinardus"
   vine             :
   weibo            :
   xing             :
-  youtube          : "@borismeinardus"
+  youtube          : # "@borismeinardus"
   wikipedia        :
 
 
