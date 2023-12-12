@@ -13,11 +13,11 @@ redirect_from:
 ![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-right width="300px"}
 👨🏻‍💻 I'm a first-year PhD student at the UCD Michael Smurfit Graduate Business School.
 
-🔬 My research interests are in bridging vision and language modalities and Self-Supervised Learning!
+🔬 My research interests are in option implied information, tail risk measurement, and derivatives pricing!
 
 📚 I'm currently working towards my Master's Thesis in the field of Vision-Language-Modelling.
 
-📽️ I am also interested in assisting others on their path in the world of Machine Learning and academia.
+📽️ I am also interested in bridging machine learning to the financial field.
 
 # Selected Experience
 
