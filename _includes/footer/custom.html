@@ -40,4 +40,33 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.getElementById("theme-toggle");
+  var icon = document.getElementById("theme-icon");
+
+  function applyTheme(theme) {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+      if (icon) icon.textContent = "☀️";
+    } else {
+      document.documentElement.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+      if (icon) icon.textContent = "🌙";
+    }
+  }
+
+  var savedTheme = localStorage.getItem("theme") || "light";
+  applyTheme(savedTheme);
+
+  if (toggle) {
+    toggle.addEventListener("click", function () {
+      var isDark = document.documentElement.classList.contains("dark-mode");
+      applyTheme(isDark ? "light" : "dark");
+    });
+  }
+});
+</script>
+
 <!-- end custom footer snippets -->
