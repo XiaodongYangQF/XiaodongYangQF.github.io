@@ -11,4 +11,33 @@
     await mermaid.run({querySelector:'code.language-mermaid'});
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.getElementById("theme-toggle");
+  var icon = document.getElementById("theme-icon");
+
+  function applyTheme(theme) {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+      if (icon) icon.className = "fa fa-fw fa-moon-o";
+    } else {
+      document.documentElement.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+      if (icon) icon.className = "fa fa-fw fa-sun-o";
+    }
+  }
+
+  var savedTheme = localStorage.getItem("theme") || "light";
+  applyTheme(savedTheme);
+
+  if (toggle) {
+    toggle.addEventListener("click", function () {
+      var isDark = document.documentElement.classList.contains("dark-mode");
+      applyTheme(isDark ? "light" : "dark");
+    });
+  }
+});
+</script>
+
 <!-- end custom footer snippets -->
