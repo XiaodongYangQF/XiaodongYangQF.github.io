@@ -11,7 +11,7 @@ redirect_from:
 
 
 ![Illustration of combining vision and language modalities](/images/PDE.png){: .align-right width="300px"}
-👨🏻‍💻 I'm a first-year PhD student at the UCD Michael Smurfit Graduate Business School.
+👨🏻‍💻 I'm a PhD candidate at the UCD Michael Smurfit Graduate Business School.
 
 🔬 My research interests are in option implied information, high-order moments, and options trading strategy!
 
