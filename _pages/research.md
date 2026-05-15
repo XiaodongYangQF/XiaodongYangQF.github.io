@@ -1,21 +1,4 @@
 ---
-layout: archive
-title: "Research"
-permalink: /research/
-author_profile: true
----
-
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<!-- ---
 layout: single
 title: "Research"
 permalink: /research/
@@ -54,4 +37,4 @@ This project studies option-implied information from sector ETF options and its 
 
 ### Derivatives Pricing
 
-### Financial Risk Management -->
+### Financial Risk Management
