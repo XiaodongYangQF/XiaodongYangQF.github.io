@@ -9,6 +9,8 @@ toc_icon: "bars"
 toc_sticky: true
 ---
 
+{% include toc icon="bars" title="On This Page" %}
+
 ## Research Overview
 
 I am a PhD candidate in Banking and Finance at UCD Michael Smurfit Graduate Business School. My research focuses on option-implied information, tail risk, risk-neutral and physical distributions, density forecasting, and financial risk management.
