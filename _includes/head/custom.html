@@ -14,57 +14,213 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<!-- Apply saved theme before the page paints, so dark mode does not flash light first. -->
+<script>
+  (function () {
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+        document.documentElement.classList.add("dark-mode");
+      }
+    } catch (e) {}
+  })();
+</script>
 
 <style>
-html.dark-mode body {
-  background: #0d1117 !important;
-  color: #c9d1d9 !important;
+/* Light/dark theme variables */
+:root {
+  --xy-bg: #ffffff;
+  --xy-surface: #ffffff;
+  --xy-surface-soft: #f6f8fa;
+  --xy-text: #494e52;
+  --xy-heading: #2f363d;
+  --xy-muted: #6a737d;
+  --xy-border: #eaecef;
+  --xy-link: #52adc8;
+  --xy-link-hover: #2d839a;
+  --xy-toggle-bg: #f6f8fa;
+  --xy-toggle-text: #24292f;
+  --xy-toggle-border: #d0d7de;
 }
 
-html.dark-mode .masthead,
-html.dark-mode .greedy-nav,
-html.dark-mode .page__footer {
-  background: #0d1117 !important;
-  border-color: #30363d !important;
+html.dark-mode {
+  --xy-bg: #0d1117;
+  --xy-surface: #161b22;
+  --xy-surface-soft: #21262d;
+  --xy-text: #c9d1d9;
+  --xy-heading: #e6edf3;
+  --xy-muted: #8b949e;
+  --xy-border: #30363d;
+  --xy-link: #58a6ff;
+  --xy-link-hover: #79c0ff;
+  --xy-toggle-bg: #21262d;
+  --xy-toggle-text: #e6edf3;
+  --xy-toggle-border: #30363d;
 }
 
-html.dark-mode .page,
-html.dark-mode .archive,
-html.dark-mode .sidebar,
-html.dark-mode .initial-content {
-  background: #0d1117 !important;
-  color: #c9d1d9 !important;
+/* Main dark-mode surfaces */
+body,
+.initial-content,
+.page,
+.archive,
+.sidebar,
+.page__content,
+.author__content,
+.greedy-nav,
+.masthead,
+.page__footer {
+  background-color: var(--xy-bg) !important;
+  color: var(--xy-text) !important;
 }
 
-html.dark-mode h1,
-html.dark-mode h2,
-html.dark-mode h3,
-html.dark-mode h4 {
-  color: #e6edf3 !important;
+.masthead,
+.page__footer,
+.greedy-nav .hidden-links,
+.toc,
+table,
+th,
+td {
+  border-color: var(--xy-border) !important;
 }
 
-html.dark-mode a {
-  color: #58a6ff !important;
+html.dark-mode .greedy-nav .hidden-links,
+html.dark-mode .toc,
+html.dark-mode .notice,
+html.dark-mode .notice--primary,
+html.dark-mode .notice--info,
+html.dark-mode .notice--warning,
+html.dark-mode .notice--success,
+html.dark-mode .notice--danger,
+html.dark-mode code,
+html.dark-mode pre,
+html.dark-mode .highlighter-rouge,
+html.dark-mode .highlight,
+html.dark-mode blockquote,
+html.dark-mode table,
+html.dark-mode thead,
+html.dark-mode tbody,
+html.dark-mode tr,
+html.dark-mode th,
+html.dark-mode td {
+  background-color: var(--xy-surface) !important;
+  color: var(--xy-text) !important;
 }
 
-html.dark-mode .greedy-nav a {
-  color: #c9d1d9 !important;
+html.dark-mode .greedy-nav .hidden-links:after {
+  border-color: var(--xy-surface) transparent !important;
 }
-</style>
 
-<style>
-.theme-toggle {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 1.05rem;
+html.dark-mode .greedy-nav .hidden-links a:hover,
+html.dark-mode .toc__menu a:hover {
+  background-color: var(--xy-surface-soft) !important;
+  color: var(--xy-heading) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.author__name {
+  color: var(--xy-heading) !important;
+}
+
+p, li, dt, dd,
+.page__meta,
+.archive__item-excerpt,
+.author__bio,
+.page__footer,
+.page__footer-copyright {
+  color: var(--xy-text) !important;
+}
+
+a {
+  color: var(--xy-link) !important;
+}
+
+a:hover {
+  color: var(--xy-link-hover) !important;
+}
+
+.greedy-nav a,
+.page__footer a,
+.author__urls a,
+.toc__menu a {
+  color: var(--xy-text) !important;
+}
+
+.greedy-nav a:hover,
+.page__footer a:hover,
+.author__urls a:hover,
+.toc__menu a:hover {
+  color: var(--xy-link-hover) !important;
+}
+
+/* Right-top theme switch */
+.masthead__inner-wrap {
+  position: relative;
+  padding-right: 8.2rem !important;
+}
+
+.site-theme-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--xy-toggle-border);
+  border-radius: 999px;
+  background: var(--xy-toggle-bg);
+  color: var(--xy-toggle-text);
+  font-size: 0.78rem;
+  font-weight: 600;
   line-height: 1;
-  padding: 0 0.8rem;
-  color: inherit;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+  z-index: 30;
 }
 
-.theme-toggle:hover {
-  opacity: 0.7;
+.site-theme-toggle:hover {
+  opacity: 0.88;
+  transform: translateY(-50%) scale(1.02);
+}
+
+.site-theme-toggle:focus {
+  outline: 2px solid var(--xy-link);
+  outline-offset: 2px;
+}
+
+#theme-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+/* Keep the mobile dropdown menu button separate from the theme button. */
+.greedy-nav > button:not(.hidden) {
+  right: 3.9rem !important;
+}
+
+@media (max-width: 600px) {
+  .masthead__inner-wrap {
+    padding-right: 6.5rem !important;
+  }
+
+  .greedy-nav > button:not(.hidden) {
+    right: 3.3rem !important;
+  }
+
+  .site-theme-toggle {
+    right: 0.75rem;
+    padding: 0.4rem 0.55rem;
+  }
+
+  .theme-toggle-label {
+    display: none;
+  }
 }
 </style>
 
