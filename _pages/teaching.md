@@ -9,7 +9,7 @@ toc_icon: "bars"
 toc_sticky: true
 ---
 
-{% include toc icon="bars" title="On This Page" %}
+<!-- {% include toc icon="bars" title="On This Page" %} -->
 
 ## Teaching Overview
 
