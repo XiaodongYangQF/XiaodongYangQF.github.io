@@ -13,50 +13,35 @@ toc_sticky: true
 
 ## Teaching Overview
 
-I have teaching and tutoring experience at University College Dublin, including UCD Quinn School of Business and UCD Michael Smurfit Graduate Business School.
+I have teaching assistant experience at University College Dublin, supporting finance and quantitative finance modules at both UCD Michael Smurfit Graduate Business School and UCD Lochlann Quinn School of Business.
 
-My teaching is mainly related to finance, quantitative finance, numerical methods, and derivative securities. I am particularly interested in helping students understand technical financial concepts through clear explanations, practical examples, and step-by-step problem solving.
+My teaching focuses on helping students understand financial theory, quantitative methods, derivatives, and practical numerical applications in finance.
+
+## Teaching Experience
+
+### UCD Michael Smurfit Graduate Business School  
+**Teaching Assistant**  
+*Jan 2024 – Present · Dublin, Ireland*
+
+I support postgraduate modules in quantitative finance, including **Numerical Methods for Finance** and **Advanced Derivative Securities**.
+
+Topics include stochastic calculus, change of measure, martingales, partial differential equations, vanilla and exotic option pricing, finite-difference methods, and Monte Carlo simulation in Python.
+
+### UCD Lochlann Quinn School of Business  
+**Teaching Assistant**  
+*Sep 2023 – Present · Dublin, Ireland*
+
+I support undergraduate teaching in **Financial Economics** for students majoring in Economics and Finance.
+
+My role includes helping students understand core financial concepts, solve quantitative problems, and connect theoretical models with real financial applications.
 
 ## Teaching Areas
 
-My teaching interests include:
-
 - Financial Economics
-- Financial Theory
 - Numerical Methods for Finance
-- Derivative Securities
+- Advanced Derivative Securities
 - Option Pricing
-- Risk Measurement
-- Value-at-Risk and Expected Shortfall
-- Quantitative Finance Applications
-
-## Teaching and Tutoring Experience
-
-### University College Dublin
-
-I have supported teaching and tutorials in finance-related modules at UCD. My role includes helping students understand lecture materials, solving quantitative problems, and connecting theoretical concepts with practical financial applications.
-
-Relevant areas include financial economics, financial theory, numerical methods for finance, and derivative securities.
-
-## Tutorial Style
-
-In my tutorials, I aim to make technical topics clear and accessible. Many topics in quantitative finance involve mathematical models, programming, and financial intuition. My teaching approach is to break down complex problems into smaller steps and explain both the intuition and the calculation.
-
-For example, in topics such as option pricing, Monte Carlo simulation, finite-difference methods, and risk measurement, I try to show students not only the formula, but also why the method is useful in finance.
-
-## Teaching Development
-
-I have also taken teaching-related training at UCD, including modules on university teaching, learning design, feedback, and scholarly communication. These experiences helped me improve how I design tutorials, communicate technical ideas, and respond to student feedback.
-
-## Selected Topics I Can Teach
-
-- Black-Scholes option pricing
-- Binomial and trinomial trees
-- Monte Carlo simulation
-- Finite-difference methods for option pricing
-- Implied volatility and volatility smiles
-- Risk-neutral valuation
-- Portfolio theory
-- Asset pricing
-- Value-at-Risk and Expected Shortfall
-- Python, R, MATLAB, and numerical applications in finance
+- Stochastic Calculus
+- Monte Carlo Simulation
+- Financial Risk Management
+- Python Applications in Finance
