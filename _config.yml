@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-UK"
-title                    : "Xiaodong's Homepage"
+title                    : "Xiaodong"
 title_separator          : "-"
 name                     : &name "Xiaodong Yang"
 description              : &description "personal description"
