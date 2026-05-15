@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-UK"
-title                    : "Xiaodong"
+title                    : "XIAODONG"
 title_separator          : "-"
 name                     : &name "Xiaodong Yang"
 description              : &description "personal description"
@@ -84,7 +84,7 @@ author:
   avatar           : "Profile_pic1.JPG"
   bio              : ""
   location         : "Dublin, Ireland"
-  employer         : "UCD Smurfit Graduate Business School"
+  employer         : "UCD Michael Smurfit Graduate Business School"
   pubmed           : 
   googlescholar    : 
   email            : "yangxiaodong993993@gmail.com"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/xiaodongqf/"
+  linkedin         : "https://www.linkedin.com/in/xiaodongqf"
   orcid            : 
   pinterest        :
   soundcloud       :

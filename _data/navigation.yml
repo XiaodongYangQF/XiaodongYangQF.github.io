@@ -14,20 +14,20 @@ main:
   - title: "Research"
     url: /research/
 
-  - title: "Publications"
-    url: /publications/
+  - title: "Projects"
+    url: /projects/
 
   - title: "Teaching"
     url: /teaching/
 
-  - title: "Projects"
-    url: /projects/
+  - title: "Publications"
+    url: /publications/
 
   - title: "CV"
     url: /cv/
 
-  - title: "Talks"
-    url: /talks/
+  # - title: "Talks"
+  #   url: /talks/
 
   - title: "Contact"
     url: /contact/
