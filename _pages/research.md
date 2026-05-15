@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: archive
 title: "Research"
 permalink: /research/
@@ -13,9 +13,9 @@ author_profile: true
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
-{% endfor %} -->
+{% endfor %}
 
----
+<!-- ---
 layout: single
 title: "Research"
 permalink: /research/
@@ -54,4 +54,4 @@ This project studies option-implied information from sector ETF options and its 
 
 ### Derivatives Pricing
 
-### Financial Risk Management
+### Financial Risk Management -->
