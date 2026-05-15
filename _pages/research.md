@@ -3,7 +3,7 @@ layout: single
 title: "Research"
 permalink: /research/
 author_profile: true
-toc: true
+toc: false
 toc_label: "On This Page"
 toc_icon: "bars"
 toc_sticky: true
