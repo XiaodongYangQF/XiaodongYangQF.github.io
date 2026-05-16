@@ -550,14 +550,163 @@ html.dark-mode .author__urls .ai {
   color: inherit !important;
 }
 
-.about-justify {
+/* .about-justify {
   max-width: 850px;
 }
 
 .about-justify p {
   text-align: left;
   line-height: 1.75;
+} */
+
+/* Set the two columns on the home page */
+
+.home-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+  max-width: 900px;
 }
+
+.home-info-card {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 14px;
+  background: rgba(128, 128, 128, 0.05);
+}
+
+.home-info-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+}
+
+.home-info-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.home-info-card li {
+  margin-bottom: 0.45rem;
+  line-height: 1.45;
+}
+
+.research-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.7rem;
+  line-height: 1.25;
+}
+
+.research-cloud span {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--global-font-color);
+  /* color: var(--global-link-color, #4aa8c0); */
+}
+
+.cloud-xl {
+  font-size: 1.25rem;
+}
+
+.cloud-lg {
+  font-size: 1.05rem;
+}
+
+.cloud-md {
+  font-size: 0.92rem;
+}
+
+.cloud-sm {
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+/* .home-beyond {
+  margin-top: 1.2rem;
+  padding: 0.8rem 1rem;
+  max-width: 900px;
+  border: 1px solid rgba(128, 128, 128, 0.22);
+  border-radius: 14px;
+  background: rgba(128, 128, 128, 0.04);
+  font-size: 0.95rem;
+}
+
+.home-beyond strong {
+  margin-right: 0.5rem;
+}
+
+.home-beyond span {
+  display: inline-block;
+  margin-right: 0.8rem;
+  margin-top: 0.25rem;
+  opacity: 0.9;
+} */
+
+
+/* @media (max-width: 768px) {
+  .home-info-grid {
+    grid-template-columns: 1fr;
+  }
+} */
+
+.home-beyond {
+  grid-column: 1 / -1;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 14px;
+  background: rgba(128, 128, 128, 0.04);
+  box-sizing: border-box;
+  font-size: 0.95rem;
+}
+
+.home-beyond strong {
+  margin-right: 0.7rem;
+}
+
+.home-beyond span {
+  display: inline-block; /* Keeps them neatly aligned */
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+  opacity: 0.9;
+  /* Prevents an individual hobby from breaking in half */
+  white-space: nowrap; 
+}
+
+/* Add a dot after every item EXCEPT the last one */
+/* .home-beyond span:not(:last-child)::after {
+  content: "•";
+  /* Adjust the 10px to add more or less space around the dot */
+  /* margin: 0 10px;  */
+  /* Optional: makes the dot slightly lighter than the text */
+  /* color: #888;     */
+  /* color: var(--global-font-color); */
+/* } */
+
+/* Add a pipe after every item EXCEPT the last one */
+.home-beyond span:not(:last-child)::after {
+  content: "|";
+  /* Adjust spacing to your liking */
+  margin: 0 12px; 
+  /* Optional: makes the pipe a soft gray so it's not too harsh */
+  /* color: #ccc;     */
+  color: var(--global-font-color);
+}
+
+
+@media (max-width: 768px) {
+  .home-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-beyond {
+    grid-column: 1;
+  }
+}
+
 
 </style>
 
