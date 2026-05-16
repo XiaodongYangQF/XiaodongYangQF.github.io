@@ -282,6 +282,12 @@ a:hover {
     align-items: start !important;
   }
 
+  /* .page__content p {
+    text-align: left;
+    letter-spacing: normal;
+    word-spacing: normal;
+  } */
+
   /* NEW: all normal content stays in the main column */
   .page__content > :not(.sidebar__right) {
     grid-column: 1 !important;
@@ -669,11 +675,11 @@ html.dark-mode .author__urls .ai {
 
 .home-beyond span {
   display: inline-block; /* Keeps them neatly aligned */
+  white-space: nowrap; 
   margin-right: 1rem;
   margin-top: 0.25rem;
   opacity: 0.9;
   /* Prevents an individual hobby from breaking in half */
-  white-space: nowrap; 
 }
 
 /* Add a dot after every item EXCEPT the last one */
@@ -706,6 +712,17 @@ html.dark-mode .author__urls .ai {
     grid-column: 1;
   }
 }
+
+
+/* body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3, .site-title, .masthead__menu-item {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+} */
+
+
 
 
 </style>
