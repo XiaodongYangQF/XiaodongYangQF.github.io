@@ -230,41 +230,42 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
 
-  /* AcademicPages reserves too much empty space on the right.
-     This gives more space back to the main article area. */
+  /* NEW: give more space back to the main page */
   article.page {
     padding-right: 0 !important;
   }
 
-  /* Use a two-column layout inside the content area:
-     main content + small right TOC */
+  /* NEW: create two columns:
+     left = main content
+     right = small TOC */
   .page__content {
     display: grid !important;
-    grid-template-columns: minmax(0, 1fr) 190px !important;
-    column-gap: 2rem !important;
+    grid-template-columns: minmax(0, 1fr) 160px !important;
+    column-gap: 1.2rem !important;
     align-items: start !important;
   }
 
-  /* All normal page content goes to the main column */
+  /* NEW: all normal content stays in the main column */
   .page__content > :not(.sidebar__right) {
     grid-column: 1 !important;
   }
 
-  /* The right TOC goes to the second column */
+  /* CHANGED: TOC is now a separate right column, not floating inside text */
   .page__content > .sidebar__right {
     grid-column: 2 !important;
     grid-row: 1 / span 100 !important;
     float: none !important;
     clear: none !important;
-    width: 190px !important;
-    min-width: 190px !important;
-    max-width: 190px !important;
+    width: 160px !important;
+    min-width: 160px !important;
+    max-width: 160px !important;
     margin: 0 !important;
     position: sticky !important;
     top: 5rem !important;
     z-index: 10 !important;
   }
 
+  /* CHANGED: TOC box style */
   .page__content > .sidebar__right .toc {
     width: 100% !important;
     min-width: 0 !important;
@@ -278,6 +279,7 @@ a:hover {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important;
   }
 
+  /* CHANGED: TOC title bar */
   .page__content > .sidebar__right .toc .nav__title {
     display: block !important;
     width: 100% !important;
@@ -294,6 +296,7 @@ a:hover {
     letter-spacing: 0.02em !important;
   }
 
+  /* CHANGED: TOC links */
   .page__content > .sidebar__right .toc__menu {
     width: 100% !important;
     margin: 0 !important;
@@ -318,13 +321,14 @@ a:hover {
     background-color: var(--xy-surface-soft) !important;
   }
 
+  /* NEW: indent subheadings in the TOC */
   .page__content > .sidebar__right .toc__menu li ul > li a {
     padding-left: 1.3rem !important;
     font-weight: 500 !important;
   }
 }
 
-/* Mobile: TOC returns to normal full-width block */
+/* NEW: on small screens, TOC becomes full-width block again */
 @media screen and (max-width: 1023px) {
   .page__content {
     display: block !important;
