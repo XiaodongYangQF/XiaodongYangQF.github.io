@@ -33,6 +33,24 @@ toc: false
       <span>Open tool →</span>
     </a>
 
+    <a class="tool-card" href="https://xiaodong-option-pricing-lab.streamlit.app/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-tag">Python · Streamlit</div>
+        <h2>Option Pricing Lab — Streamlit App</h2>
+        <p>
+            A Python-powered dashboard with Black-Scholes pricing, Greeks,
+            implied volatility solver, volatility smile construction, and scenario analysis.
+        </p>
+        <span>Launch live app →</span>
+    </a>
+
+    <p>
+        <a href="https://github.com/XiaodongYangQF/quant-finance-pricing-lab"
+            target="_blank" rel="noopener noreferrer">
+            View source code on GitHub
+        </a>
+    </p>
+
+
     <a class="tool-card" href="{{ '/interactive-tools/late-goal-probability/' | relative_url }}">
       <div class="tool-tag">Sports Analytics</div>
       <h2>Late Goal Probability Dashboard</h2>
