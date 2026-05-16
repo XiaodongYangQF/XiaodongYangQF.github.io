@@ -440,12 +440,40 @@ a:hover {
   font-weight: 600 !important;
 }
 
-/* Sidebar stays clean and modern */
+/* ------------------------------------------------------------
+   Author sidebar typography
+   ------------------------------------------------------------ */
+
 .sidebar,
 .author__content,
 .author__urls,
-.author__urls a {
+.author__urls a,
+.author__urls li {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Author name: stronger but not too heavy */
+.author__name {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em !important;
+  line-height: 1.3 !important;
+}
+
+/* Location, university, website, email, LinkedIn, GitHub */
+.author__urls,
+.author__urls li,
+.author__urls a {
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Make long university name look cleaner */
+.author__urls li {
+  margin-bottom: 0.35rem !important;
 }
 
 
