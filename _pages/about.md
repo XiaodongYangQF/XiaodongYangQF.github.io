@@ -8,9 +8,20 @@ redirect_from:
   - /about.html
 ---
 
-## 👋 Hello, I’m Xiaodong!
+<!-- ## 👋 Hello, I’m Xiaodong! -->
 
-I am a PhD candidate in Banking and Finance at UCD Michael Smurfit Graduate Business School, University College Dublin.
+
+
+I am a PhD candidate in Banking and Finance at UCD Michael Smurfit Graduate Business School, University College Dublin. My research focuses on option-implied information, tail risk, risk-neutral and physical distributions, density forecasting, and financial risk management.
+
+I am interested in how option markets reveal information about future market risks, equity premiums, variance premiums, and tail events. I also work on derivatives pricing, asset pricing, machine learning, and data-driven trading strategies.
+
+**Selected background:** CQF, FRM, and CMA holder; former financial settlement specialist and risk analyst at Huawei Technologies; teaching and tutoring experience in financial economics, numerical methods, and derivative securities at UCD.
+
+**Research interests:** option-implied distributions · tail risk · extreme events · density forecasting · VaR/ES · derivatives pricing · asset pricing · quantitative trading
+
+
+<!-- I am a PhD candidate in Banking and Finance at UCD Michael Smurfit Graduate Business School, University College Dublin.
 
 My research focuses on option-implied information, tail risk, risk-neutral and physical distributions, density forecasting, and financial risk management.
 
@@ -42,7 +53,7 @@ Recovering risk-neutral distributions from option prices and studying their pred
 Modelling downside and upside tail behaviour using GEV/GPD-based methods.
 
 ### Density Forecasting and Risk Management
-Evaluating predictive densities, VaR, Expected Shortfall, and market risk forecasts.
+Evaluating predictive densities, VaR, Expected Shortfall, and market risk forecasts. -->
 
 
 

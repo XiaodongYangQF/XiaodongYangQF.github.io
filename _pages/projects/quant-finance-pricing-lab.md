@@ -13,16 +13,18 @@ toc_sticky: true
 
 ## Overview
 
-A Python-based project for derivatives pricing and numerical methods in quantitative finance.
+Quant Finance Pricing Lab is a Python-based project for derivatives pricing and numerical methods in quantitative finance.
+
+The project focuses on transparent implementation of core pricing models rather than relying only on black-box libraries.
 
 ## Main Features
 
-- Black-Scholes pricing
-- Greeks
-- Implied volatility
-- Binomial trees
+- Black-Scholes option pricing
+- Greeks calculation
+- Implied volatility estimation
+- Binomial tree methods
 - Monte Carlo simulation
-- Finite-difference methods
+- Finite-difference methods for option pricing
 
 ## Links
 
