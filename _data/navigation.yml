@@ -17,8 +17,11 @@ main:
   - title: "Projects"
     url: /projects/
 
-  - title: "Interactive Tools"
+  - title: "Tools"
     url: /interactive-tools/
+
+  # - title: "Interactive Tools"
+  #   url: /interactive-tools/
 
   - title: "Teaching"
     url: /teaching/
