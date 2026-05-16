@@ -225,105 +225,123 @@ a:hover {
 
 /* ------------------------------------------------------------
    Right-side table of contents
+   Main content first, TOC second
    ------------------------------------------------------------ */
 
-/* Force AcademicPages right TOC to have a real width */
-.page__content .sidebar__right,
-.sidebar__right {
-  position: relative !important;
-  float: right !important;
-  clear: right !important;
-  width: 230px !important;
-  min-width: 230px !important;
-  max-width: 230px !important;
-  margin: 0 0 1.25rem 2rem !important;
-  z-index: 10 !important;
+@media screen and (min-width: 1024px) {
+
+  /* AcademicPages reserves too much empty space on the right.
+     This gives more space back to the main article area. */
+  article.page {
+    padding-right: 0 !important;
+  }
+
+  /* Use a two-column layout inside the content area:
+     main content + small right TOC */
+  .page__content {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 190px !important;
+    column-gap: 2rem !important;
+    align-items: start !important;
+  }
+
+  /* All normal page content goes to the main column */
+  .page__content > :not(.sidebar__right) {
+    grid-column: 1 !important;
+  }
+
+  /* The right TOC goes to the second column */
+  .page__content > .sidebar__right {
+    grid-column: 2 !important;
+    grid-row: 1 / span 100 !important;
+    float: none !important;
+    clear: none !important;
+    width: 190px !important;
+    min-width: 190px !important;
+    max-width: 190px !important;
+    margin: 0 !important;
+    position: sticky !important;
+    top: 5rem !important;
+    z-index: 10 !important;
+  }
+
+  .page__content > .sidebar__right .toc {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background-color: var(--xy-surface) !important;
+    border: 1px solid var(--xy-border) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .page__content > .sidebar__right .toc .nav__title {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0.55rem 0.8rem !important;
+    background-color: #6a737d !important;
+    color: #ffffff !important;
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    text-transform: none !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .page__content > .sidebar__right .toc__menu {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .page__content > .sidebar__right .toc__menu a {
+    display: block !important;
+    padding: 0.5rem 0.8rem !important;
+    color: var(--xy-text) !important;
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid var(--xy-border) !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+  }
+
+  .page__content > .sidebar__right .toc__menu a:hover {
+    color: var(--xy-link-hover) !important;
+    background-color: var(--xy-surface-soft) !important;
+  }
+
+  .page__content > .sidebar__right .toc__menu li ul > li a {
+    padding-left: 1.3rem !important;
+    font-weight: 500 !important;
+  }
 }
 
-/* TOC box */
-.page__content .sidebar__right .toc,
-.sidebar__right .toc {
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  background-color: var(--xy-surface) !important;
-  border: 1px solid var(--xy-border) !important;
-  border-radius: 4px !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important;
-  text-transform: none !important;
-  letter-spacing: 0 !important;
-}
+/* Mobile: TOC returns to normal full-width block */
+@media screen and (max-width: 1023px) {
+  .page__content {
+    display: block !important;
+  }
 
-/* TOC title bar */
-.page__content .sidebar__right .toc .nav__title,
-.sidebar__right .toc .nav__title {
-  display: block !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-  margin: 0 !important;
-  padding: 0.65rem 1rem !important;
-  background-color: #6a737d !important;
-  color: #ffffff !important;
-  font-size: 0.82rem !important;
-  font-weight: 700 !important;
-  line-height: 1.2 !important;
-  white-space: nowrap !important;
-  text-transform: none !important;
-  letter-spacing: 0.02em !important;
-}
-
-/* TOC links */
-.page__content .sidebar__right .toc__menu,
-.sidebar__right .toc__menu {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.page__content .sidebar__right .toc__menu a,
-.sidebar__right .toc__menu a {
-  display: block !important;
-  padding: 0.55rem 1rem !important;
-  color: var(--xy-text) !important;
-  font-size: 0.76rem !important;
-  font-weight: 600 !important;
-  line-height: 1.35 !important;
-  text-decoration: none !important;
-  border-bottom: 1px solid var(--xy-border) !important;
-  text-transform: none !important;
-  letter-spacing: 0 !important;
-}
-
-.page__content .sidebar__right .toc__menu a:hover,
-.sidebar__right .toc__menu a:hover {
-  color: var(--xy-link-hover) !important;
-  background-color: var(--xy-surface-soft) !important;
-}
-
-/* Indented subheadings */
-.page__content .sidebar__right .toc__menu li ul > li a,
-.sidebar__right .toc__menu li ul > li a {
-  padding-left: 1.6rem !important;
-  font-weight: 500 !important;
-}
-
-/* Mobile: put TOC back into normal page flow */
-@media screen and (max-width: 1024px) {
-  .page__content .sidebar__right,
-  .sidebar__right {
+  .page__content > .sidebar__right {
     float: none !important;
     clear: both !important;
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100% !important;
     margin: 0 0 1.5rem 0 !important;
+    position: relative !important;
+    top: auto !important;
   }
 
-  .page__content .sidebar__right .toc,
-  .sidebar__right .toc {
+  .page__content > .sidebar__right .toc {
     width: 100% !important;
   }
 }
