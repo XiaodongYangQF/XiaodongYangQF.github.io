@@ -508,6 +508,41 @@ a:hover {
   }
 }
 
+/* ------------------------------------------------------------
+   Author sidebar icons
+   ------------------------------------------------------------ */
+
+/* Make all author sidebar icons consistent */
+.author__urls i,
+.author__urls .fa,
+.author__urls .fas,
+.author__urls .far,
+.author__urls .fab,
+.author__urls .ai {
+  color: var(--xy-muted) !important;
+  opacity: 1 !important;
+}
+
+/* Make sidebar text and icons readable in dark mode */
+html.dark-mode .author__urls i,
+html.dark-mode .author__urls .fa,
+html.dark-mode .author__urls .fas,
+html.dark-mode .author__urls .far,
+html.dark-mode .author__urls .fab,
+html.dark-mode .author__urls .ai {
+  color: var(--xy-text) !important;
+  opacity: 1 !important;
+}
+
+/* Make linked icons inherit the same colour as the text */
+.author__urls a i,
+.author__urls a .fa,
+.author__urls a .fas,
+.author__urls a .far,
+.author__urls a .fab,
+.author__urls a .ai {
+  color: inherit !important;
+}
 
 </style>
 
