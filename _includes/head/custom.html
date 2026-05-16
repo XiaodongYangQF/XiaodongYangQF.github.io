@@ -476,6 +476,38 @@ a:hover {
   margin-bottom: 0.35rem !important;
 }
 
+/* ------------------------------------------------------------
+   Author bio typography
+   ------------------------------------------------------------ */
+
+.author__bio {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  line-height: 1.45 !important;
+  letter-spacing: 0.01em !important;
+  color: var(--xy-muted) !important;
+  margin-top: 0.35rem !important;
+  max-width: 220px !important;
+}
+
+/* Desktop sidebar: keep it compact */
+@media screen and (min-width: 1024px) {
+  .author__bio {
+    text-align: left !important;
+  }
+}
+
+/* Mobile/tablet author block: keep it centered and readable */
+@media screen and (max-width: 1023px) {
+  .author__bio {
+    text-align: center !important;
+    max-width: 280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
 
 </style>
 
