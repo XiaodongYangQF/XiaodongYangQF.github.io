@@ -3,7 +3,7 @@ layout: single
 title: "Quant Finance Pricing Lab"
 permalink: /projects/quant-finance-pricing-lab/
 author_profile: true
-toc: false
+toc: true
 toc_label: "On This Page"
 toc_icon: "bars"
 toc_sticky: true
