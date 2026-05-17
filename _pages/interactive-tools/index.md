@@ -50,6 +50,22 @@ toc: false
         </a>
     </p>
 
+    <a class="tool-card" href="https://bibflow-streamlit.streamlit.app/" target="_blank" rel="noopener noreferrer">
+        <div class="tool-tag">Python · Streamlit</div>
+        <h2>BibFlow: Zotero–Overleaf BibTeX Workflow Assistant</h2>
+        <p>
+            BibFlow is a lightweight research workflow tool that helps researchers generate, clean, deduplicate, and export Overleaf-ready BibTeX entries from DOI metadata.
+        </p>
+        <span>Launch live app →</span>
+    </a>
+
+    <p>
+        <a href="https://github.com/XiaodongYangQF/bibflow-streamlit"
+            target="_blank" rel="noopener noreferrer">
+            View source code on GitHub
+        </a>
+    </p>
+
 
     <a class="tool-card" href="{{ '/interactive-tools/late-goal-probability/' | relative_url }}">
       <div class="tool-tag">Sports Analytics</div>
