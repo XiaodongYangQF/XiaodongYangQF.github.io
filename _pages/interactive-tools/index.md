@@ -13,69 +13,78 @@ toc: false
 
   <section class="tools-hero">
     <p class="tools-label">Quant Finance · Analytics · Research Prototypes</p>
-    <h1>Interactive Tools</h1>
     <p>
       A collection of browser-based and Python-powered tools for exploring
       option pricing, Greeks, payoff profiles, market-implied information,
-      and applied probability models.
+      research workflows, and applied probability models.
     </p>
   </section>
 
   <section class="tools-grid">
 
-    <a class="tool-card" href="{{ '/interactive-tools/option-pricing/' | relative_url }}">
+    <article class="tool-card">
+      <div class="tool-icon">📈</div>
       <div class="tool-tag">Quant Finance</div>
       <h2>Option Pricing & Greeks Dashboard</h2>
       <p>
         An interactive Black-Scholes dashboard for option prices, Greeks,
         payoff diagrams, and pricing sensitivity.
       </p>
-      <span>Open tool →</span>
-    </a>
-
-    <a class="tool-card" href="https://xiaodong-option-pricing-lab.streamlit.app/" target="_blank" rel="noopener noreferrer">
-        <div class="tool-tag">Python · Streamlit</div>
-        <h2>Option Pricing Lab — Streamlit App</h2>
-        <p>
-            A Python-powered dashboard with Black-Scholes pricing, Greeks,
-            implied volatility solver, volatility smile construction, and scenario analysis.
-        </p>
-        <span>Launch live app →</span>
-    </a>
-
-    <p>
-        <a href="https://github.com/XiaodongYangQF/quant-finance-pricing-lab"
-            target="_blank" rel="noopener noreferrer">
-            View source code on GitHub
+      <div class="tool-actions">
+        <a class="tool-button" href="{{ '/interactive-tools/option-pricing/' | relative_url }}">
+          Open tool →
         </a>
-    </p>
+      </div>
+    </article>
 
-    <a class="tool-card" href="https://research-bibflow.streamlit.app/" target="_blank" rel="noopener noreferrer">
-        <div class="tool-tag">Python · Streamlit</div>
-        <h2>BibFlow: Zotero–Overleaf BibTeX Workflow Assistant</h2>
-        <p>
-            BibFlow is a lightweight research workflow tool that helps researchers generate, clean, deduplicate, and export Overleaf-ready BibTeX entries from DOI metadata.
-        </p>
-        <span>Launch live app →</span>
-    </a>
-
-    <p>
-        <a href="https://github.com/XiaodongYangQF/bibflow-streamlit"
-            target="_blank" rel="noopener noreferrer">
-            View source code on GitHub
+    <article class="tool-card">
+      <div class="tool-icon">🧮</div>
+      <div class="tool-tag">Python · Streamlit</div>
+      <h2>Option Pricing Lab — Streamlit App</h2>
+      <p>
+        A Python-powered dashboard with Black-Scholes pricing, Greeks,
+        implied volatility solver, volatility smile construction, and scenario analysis.
+      </p>
+      <div class="tool-actions">
+        <a class="tool-button" href="https://xiaodong-option-pricing-lab.streamlit.app/" target="_blank" rel="noopener noreferrer">
+          Launch live app →
         </a>
-    </p>
+        <a class="tool-link" href="https://github.com/XiaodongYangQF/quant-finance-pricing-lab" target="_blank" rel="noopener noreferrer">
+          Source code
+        </a>
+      </div>
+    </article>
 
+    <article class="tool-card">
+      <div class="tool-icon">📚</div>
+      <div class="tool-tag">Research Workflow · BibTeX</div>
+      <h2>BibFlow: Zotero–Overleaf BibTeX Assistant</h2>
+      <p>
+        A lightweight research workflow tool that helps researchers generate,
+        clean, deduplicate, and export Overleaf-ready BibTeX entries from DOI metadata.
+      </p>
+      <div class="tool-actions">
+        <a class="tool-button" href="https://research-bibflow.streamlit.app/" target="_blank" rel="noopener noreferrer">
+          Launch live app →
+        </a>
+        <a class="tool-link" href="https://github.com/XiaodongYangQF/bibflow-streamlit" target="_blank" rel="noopener noreferrer">
+          Source code
+        </a>
+      </div>
+    </article>
 
-    <a class="tool-card" href="{{ '/interactive-tools/late-goal-probability/' | relative_url }}">
+    <article class="tool-card tool-card-muted">
+      <div class="tool-icon">⚽</div>
       <div class="tool-tag">Sports Analytics</div>
       <h2>Late Goal Probability Dashboard</h2>
       <p>
         A research prototype for estimating late-goal probabilities using
         in-play Asian over/under lines, handicap lines, odds, and match state.
       </p>
-      <span>Coming soon →</span>
-    </a>
+      <div class="tool-actions">
+        <span class="tool-button disabled">Coming soon →</span>
+      </div>
+    </article>
 
   </section>
 
