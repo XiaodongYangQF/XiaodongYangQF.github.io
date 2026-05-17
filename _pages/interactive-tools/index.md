@@ -50,7 +50,7 @@ toc: false
         </a>
     </p>
 
-    <a class="tool-card" href="https://bibflow-streamlit.streamlit.app/" target="_blank" rel="noopener noreferrer">
+    <a class="tool-card" href="https://research-bibflow.streamlit.app/" target="_blank" rel="noopener noreferrer">
         <div class="tool-tag">Python · Streamlit</div>
         <h2>BibFlow: Zotero–Overleaf BibTeX Workflow Assistant</h2>
         <p>
