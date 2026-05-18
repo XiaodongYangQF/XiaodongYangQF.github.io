@@ -13,6 +13,7 @@ toc: false
 
   <section class="tools-hero">
     <p class="tools-label">Quant Finance · Analytics · Research Prototypes</p>
+    <h1>Interactive Tools</h1>
     <p>
       A collection of browser-based and Python-powered tools for exploring
       option pricing, Greeks, payoff profiles, market-implied information,
@@ -55,14 +56,17 @@ toc: false
       </div>
     </article>
 
-    <article class="tool-card">
+    <article class="tool-card featured-tool">
       <div class="tool-icon">📚</div>
-      <div class="tool-tag">Research Workflow · BibTeX</div>
-      <h2>BibFlow: Zotero–Overleaf BibTeX Assistant</h2>
+      <div class="tool-tag">Research Workflow</div>
+      <h2>BibFlow</h2>
       <p>
-        A lightweight research workflow tool that helps researchers generate,
-        clean, deduplicate, and export Overleaf-ready BibTeX entries from DOI metadata.
+        A Streamlit app for cleaning BibTeX references, managing research libraries,
+        matching AJG/ABS-style journal rankings, and tracking literature-review progress.
       </p>
+      <div class="tool-meta">
+        Streamlit · BibTeX · AJG/ABS · FT50 · Literature Review
+      </div>
       <div class="tool-actions">
         <a class="tool-button" href="https://research-bibflow.streamlit.app/" target="_blank" rel="noopener noreferrer">
           Launch live app →
