@@ -60,14 +60,18 @@ toc: false
       <div class="tool-icon">📚</div>
       <div class="tool-tag">Research Workflow</div>
       <h2>BibFlow</h2>
+
       <p>
-        A Streamlit app for cleaning BibTeX references, managing research libraries,
-        matching AJG/ABS-style journal rankings, and tracking literature-review progress.
+        A research workflow tool for cleaning references, retrieving DOI metadata,
+        checking duplicates, and exporting cleaner BibTeX records.
       </p>
+
       <div class="tool-meta">
-        Streamlit · BibTeX · AJG/ABS · FT50 · Literature Review
+        Streamlit · DOI Metadata · BibTeX · RIS/HTML · Literature Review
       </div>
+
       <div class="tool-actions">
+      
         <a class="tool-button" href="https://research-bibflow.streamlit.app/" target="_blank" rel="noopener noreferrer">
           Launch live app →
         </a>
