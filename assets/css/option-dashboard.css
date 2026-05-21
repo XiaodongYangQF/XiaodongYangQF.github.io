@@ -1,7 +1,16 @@
 .option-dashboard {
-  width: min(1560px, 96vw);
-  max-width: none;
-  margin: 0 auto;
+  width: calc(100vw - 48px);
+  max-width: 1480px;
+  margin-left: calc(50% - 50vw + 24px);
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1528px) {
+  .option-dashboard {
+    width: 1480px;
+    margin-left: calc(50% - 740px);
+  }
 }
 
 .back-link {
