@@ -25,15 +25,16 @@ toc: false
 
     <article class="tool-card">
       <div class="tool-icon">📈</div>
-      <div class="tool-tag">Quant Finance</div>
-      <h2>Option Pricing & Greeks Dashboard</h2>
+      <div class="tool-tag">Browser Demo</div>
+      <h2>Black-Scholes Browser Demo</h2>
       <p>
-        An interactive Black-Scholes dashboard for option prices, Greeks,
-        payoff diagrams, and pricing sensitivity.
+        A lightweight in-browser calculator for Black-Scholes option prices,
+        Greeks, payoff profiles, and spot-price sensitivity. Use sliders for
+        fast exploration or exact input boxes for precise values.
       </p>
       <div class="tool-actions">
         <a class="tool-button" href="{{ '/interactive-tools/option-pricing/' | relative_url }}">
-          Open tool →
+          Open browser demo →
         </a>
       </div>
     </article>
@@ -41,10 +42,11 @@ toc: false
     <article class="tool-card">
       <div class="tool-icon">🧮</div>
       <div class="tool-tag">Python · Streamlit</div>
-      <h2>Option Pricing Lab — Streamlit App</h2>
+      <h2>Option Pricing Lab — Full Streamlit App</h2>
       <p>
-        A Python-powered dashboard with Black-Scholes pricing, Greeks,
-        implied volatility solver, volatility smile construction, and scenario analysis.
+        A Python-powered option pricing lab with interactive controls, Greeks,
+        sensitivity charts, implied volatility, volatility smile construction,
+        and scenario analysis.
       </p>
       <div class="tool-actions">
         <a class="tool-button" href="https://xiaodong-option-pricing-lab.streamlit.app/" target="_blank" rel="noopener noreferrer">
@@ -71,7 +73,6 @@ toc: false
       </div>
 
       <div class="tool-actions">
-      
         <a class="tool-button" href="https://research-bibflow.streamlit.app/" target="_blank" rel="noopener noreferrer">
           Launch live app →
         </a>
