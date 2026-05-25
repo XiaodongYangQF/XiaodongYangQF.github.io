@@ -7,8 +7,68 @@ redirect_from:
 - /cv
 ---
 
-<!-- <embed src="../files/Xiaodong_Yang_CV.pdf" type="application/pdf" frameBorder="0" scrolling="auto" height="100%"
-  width="100%"></embed> -->
+{% assign cv_pdf = "/files/cv_5_18.pdf" | relative_url %}
 
-<embed src="../files/cv_5_18.pdf" type="application/pdf" frameBorder="0" scrolling="auto" height="100%"
-  width="100%"></embed>
+<div class="cv-actions">
+  <a class="btn btn--primary" href="{{ cv_pdf }}" target="_blank" rel="noopener">
+    Open CV PDF
+  </a>
+
+  <a class="btn btn--inverse" href="{{ cv_pdf }}" download>
+    Download CV PDF
+  </a>
+</div>
+
+<p class="cv-mobile-note">
+  For the best mobile experience, please open or download the PDF using the buttons above.
+</p>
+
+<div class="cv-pdf-desktop">
+  <iframe
+    src="{{ cv_pdf }}#toolbar=1&navpanes=0&scrollbar=1"
+    title="Xiaodong Yang CV"
+    width="100%"
+    height="900px"
+    style="border: none;">
+  </iframe>
+</div>
+
+<style>
+.cv-actions {
+  margin-bottom: 1rem;
+}
+
+.cv-actions .btn {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv-mobile-note {
+  display: none;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.cv-pdf-desktop {
+  width: 100%;
+}
+
+/* Mobile setting */
+@media screen and (max-width: 768px) {
+  .cv-pdf-desktop {
+    display: none;
+  }
+
+  .cv-mobile-note {
+    display: block;
+  }
+
+  .cv-actions .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+}
+</style>
