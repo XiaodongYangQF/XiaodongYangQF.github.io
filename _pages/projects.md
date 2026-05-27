@@ -1,9 +1,9 @@
 ---
-layout: archive
+layout: centered
 # title: "Projects"
 permalink: /projects/
 author_profile: false
-classes: no-sidebar-page
+# classes: no-sidebar-page
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}">
