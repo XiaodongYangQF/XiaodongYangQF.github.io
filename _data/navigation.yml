@@ -14,20 +14,23 @@ main:
   - title: "Research"
     url: /research/
 
+  - title: "Papers"
+    url: /papers/
+
   - title: "Projects"
     url: /projects/
 
-  - title: "Tools"
-    url: /interactive-tools/
-
-  # - title: "Interactive Tools"
+  # - title: "Tools"
   #   url: /interactive-tools/
+
+  - title: "Interactive Tools"
+    url: /interactive-tools/
 
   - title: "Teaching"
     url: /teaching/
 
-  - title: "Publications"
-    url: /publications/
+  # - title: "Publications"
+  #   url: /publications/
 
   - title: "CV"
     url: /cv/

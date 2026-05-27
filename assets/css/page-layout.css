@@ -1,0 +1,86 @@
+/* ============================================================
+   True centered layout for pages without author sidebar
+   ============================================================ */
+
+.no-sidebar-page #main {
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Remove Minimal Mistakes archive/sidebar offset */
+.no-sidebar-page .archive {
+  float: none !important;
+  width: 100% !important;
+  max-width: 960px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Hide auto-generated archive title if you use your own h1 */
+.no-sidebar-page #page-title,
+.no-sidebar-page .archive > h1:first-child {
+  display: none !important;
+}
+
+/* Manual page wrapper */
+.no-sidebar-page .research-page,
+.no-sidebar-page .projects-page,
+.no-sidebar-page .papers-page {
+  width: 100% !important;
+  max-width: 960px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-bottom: 3rem !important;
+}
+
+/* Slightly wider pages for card-heavy sections */
+.no-sidebar-page .projects-page {
+  max-width: 1050px !important;
+}
+
+.no-sidebar-page .research-page {
+  max-width: 1050px !important;
+}
+
+/* Manual title alignment */
+.custom-page-title {
+  margin-top: 0 !important;
+  margin-bottom: 1.2rem !important;
+  font-size: 1.9rem !important;
+  line-height: 1.25 !important;
+}
+
+/* @media screen and (max-width: 1023px) {
+  .no-sidebar-page #main {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .no-sidebar-page .archive,
+  .no-sidebar-page .research-page,
+  .no-sidebar-page .projects-page,
+  .no-sidebar-page .papers-page {
+    max-width: 100% !important;
+  }
+} */
+
+.research-page {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem 3rem;
+}
+
+.projects-page {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem 3rem;
+}
+

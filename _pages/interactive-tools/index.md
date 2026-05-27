@@ -13,7 +13,7 @@ toc: false
 
   <section class="tools-hero">
     <p class="tools-label">Quant Finance · Analytics · Research Prototypes</p>
-    <h1>Interactive Tools</h1>
+    <!-- <h1>Interactive Tools</h1> -->
     <p>
       A collection of browser-based and Python-powered tools for exploring
       option pricing, Greeks, payoff profiles, market-implied information,
