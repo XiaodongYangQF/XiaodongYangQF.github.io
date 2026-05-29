@@ -798,89 +798,6 @@ html {
 }
 
 
-/* ============================================================
-   Mobile dropdown menu fit adjustment
-   Keep the original Minimal Mistakes mobile button style,
-   only make the dropdown fully visible on small screens.
-   ============================================================ */
-
-@media screen and (max-width: 768px) {
-
-  /* Keep enough room for the theme toggle on the right */
-  .masthead__inner-wrap {
-    padding-right: 6.5rem !important;
-  }
-
-  /* Keep the original mobile menu button, only place it safely */
-  .greedy-nav > button:not(.hidden) {
-    right: 3.6rem !important;
-    z-index: 50 !important;
-  }
-
-  /* Make the dropdown narrower and pull it slightly left */
-  .greedy-nav .hidden-links {
-    position: absolute !important;
-    top: calc(100% + 0.45rem) !important;
-    right: 2.2rem !important;
-    left: auto !important;
-
-    width: min(70vw, 280px) !important;
-    min-width: 0 !important;
-    max-width: calc(100vw - 3rem) !important;
-
-    padding: 0.35rem 0 !important;
-    border: 1px solid var(--xy-border) !important;
-    border-radius: 14px !important;
-    background-color: var(--xy-surface) !important;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16) !important;
-    overflow: hidden !important;
-    z-index: 99999 !important;
-  }
-
-  /* Keep the little triangle but align it with the button */
-  .greedy-nav .hidden-links::after {
-    right: 2.1rem !important;
-  }
-
-  .greedy-nav .hidden-links li {
-    display: block !important;
-    width: 100% !important;
-    border-bottom: 1px solid var(--xy-border) !important;
-  }
-
-  .greedy-nav .hidden-links li:last-child {
-    border-bottom: none !important;
-  }
-
-  .greedy-nav .hidden-links a {
-    display: block !important;
-    padding: 0.8rem 1rem !important;
-    font-size: 0.95rem !important;
-    font-weight: 500 !important;
-    line-height: 1.25 !important;
-    text-align: left !important;
-    text-transform: none !important;
-    letter-spacing: 0 !important;
-    color: var(--xy-text) !important;
-    background-color: transparent !important;
-    white-space: nowrap !important;
-  }
-
-  .greedy-nav .hidden-links a:hover {
-    color: var(--xy-link-hover) !important;
-    background-color: var(--xy-surface-soft) !important;
-  }
-
-  /* Theme toggle stays at the far right */
-  .site-theme-toggle {
-    right: 0.75rem !important;
-    z-index: 60 !important;
-  }
-
-  .theme-toggle-label {
-    display: none !important;
-  }
-}
 
 
 /* ============================================================
@@ -928,22 +845,37 @@ html {
 }
 
 
+
 /* ============================================================
-   Final mobile hamburger icon fix
-   Keep existing dropdown style, only fix the incomplete icon
+   Final mobile navigation style
+   Menu button matches theme toggle and sits close to it
    ============================================================ */
 
 @media screen and (max-width: 768px) {
 
-  /* Keep the mobile menu button visible and aligned */
-  .greedy-nav > button {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+  .masthead__inner-wrap {
+    padding-right: 6rem !important;
+  }
 
+  .greedy-nav {
+    display: flex !important;
+    align-items: center !important;
+    min-height: 3rem !important;
+    background: transparent !important;
+  }
+
+  .greedy-nav .site-title {
+    max-width: 58vw !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* Theme toggle: far right */
+  .site-theme-toggle {
     position: absolute !important;
     top: 50% !important;
-    right: 4.25rem !important;
+    right: 0.85rem !important;
     transform: translateY(-50%) !important;
 
     width: 2.35rem !important;
@@ -952,76 +884,28 @@ html {
     min-height: 2.35rem !important;
 
     padding: 0 !important;
-    margin: 0 !important;
-
+    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
 
-    /* border: none !important;
-    border-radius: 0 !important; */
     border: 1px solid var(--xy-toggle-border) !important;
     border-radius: 999px !important;
-    background: transparent !important;
-    box-shadow: none !important;
+    background: var(--xy-toggle-bg) !important;
+    color: var(--xy-toggle-text) !important;
 
-    z-index: 50 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+    z-index: 60 !important;
   }
 
-  /* Completely remove the original Minimal Mistakes navicon */
-  .greedy-nav > button .navicon,
-  .greedy-nav > button .navicon::before,
-  .greedy-nav > button .navicon::after,
-  .greedy-nav > button svg,
-  .greedy-nav > button i {
+  .theme-toggle-label {
     display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    width: 0 !important;
-    height: 0 !important;
-    /* background: transparent !important; */
-    background: var(--xy-toggle-bg) !important;
-    content: none !important;
   }
 
-  /* Replace it with a clean hamburger icon */
-  .greedy-nav > button::before {
-    content: "☰" !important;
-    display: block !important;
-
-    font-size: 1.85rem !important;
-    font-weight: 700 !important;
-    line-height: 1 !important;
-
-    color: var(--xy-muted) !important;
-    /* background: transparent !important; */
-    background: var(--xy-toggle-bg) !important;
+  #theme-icon {
+    font-size: 1.05rem !important;
   }
 
-  html.dark-mode .greedy-nav > button::before {
-    color: var(--xy-text) !important;
-  }
-
-  /* Keep the theme button on the far right */
-  .site-theme-toggle {
-    right: 1rem !important;
-    z-index: 55 !important;
-  }
-}
-
-
-/* ============================================================
-   Mobile hamburger button: match dark/light toggle style
-   ============================================================ */
-
-@media screen and (max-width: 768px) {
-
-  /* Header spacing: leave room for menu + theme buttons */
-  .masthead__inner-wrap {
-    /* padding-right: 6.4rem !important; */
-    padding-right: 5.8rem !important;
-  }
-
-  /* Menu button: same visual style as theme toggle */
+  /* Menu button: immediately to the left of theme toggle */
   .greedy-nav > button {
     display: flex !important;
     visibility: visible !important;
@@ -1029,8 +913,10 @@ html {
 
     position: absolute !important;
     top: 50% !important;
-    /* right: 4.05rem !important; */
-    right: 3.30rem !important;
+
+    /* theme right + theme width + small gap */
+    right: calc(0.85rem + 2.35rem + 0.18rem) !important;
+
     transform: translateY(-50%) !important;
 
     width: 2.35rem !important;
@@ -1051,10 +937,10 @@ html {
 
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
     cursor: pointer !important;
-    z-index: 50 !important;
+    z-index: 55 !important;
   }
 
-  /* Hide the original Minimal Mistakes icon */
+  /* Hide original Minimal Mistakes navicon */
   .greedy-nav > button .navicon,
   .greedy-nav > button .navicon::before,
   .greedy-nav > button .navicon::after,
@@ -1073,48 +959,78 @@ html {
   .greedy-nav > button::before {
     content: "☰" !important;
     display: block !important;
-
-    font-size: 1.25rem !important;
+    font-size: 1.22rem !important;
     font-weight: 700 !important;
     line-height: 1 !important;
-
     color: var(--xy-toggle-text) !important;
     background: transparent !important;
   }
 
-  .greedy-nav > button:hover {
+  .greedy-nav > button:hover,
+  .site-theme-toggle:hover {
     opacity: 0.88 !important;
-    transform: translateY(-50%) scale(1.02) !important;
   }
 
-  .greedy-nav > button:focus {
+  .greedy-nav > button:focus,
+  .site-theme-toggle:focus {
     outline: 2px solid var(--xy-link) !important;
     outline-offset: 2px !important;
   }
 
-  /* Theme toggle: same size and alignment */
-  .site-theme-toggle {
+  /* Dropdown menu */
+  .greedy-nav .hidden-links {
+    position: absolute !important;
+    top: calc(100% + 0.5rem) !important;
     right: 1rem !important;
+    left: auto !important;
 
-    width: 2.35rem !important;
-    height: 2.35rem !important;
-    min-width: 2.35rem !important;
-    min-height: 2.35rem !important;
+    width: min(72vw, 290px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 2rem) !important;
 
-    padding: 0 !important;
-    justify-content: center !important;
-    z-index: 55 !important;
+    padding: 0.35rem 0 !important;
+    border: 1px solid var(--xy-border) !important;
+    border-radius: 14px !important;
+    background-color: var(--xy-surface) !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16) !important;
+    overflow: hidden !important;
+    z-index: 99999 !important;
   }
 
-  .theme-toggle-label {
+  .greedy-nav .hidden-links::before,
+  .greedy-nav .hidden-links::after {
     display: none !important;
   }
 
-  #theme-icon {
-    font-size: 1.05rem !important;
+  .greedy-nav .hidden-links li {
+    display: block !important;
+    width: 100% !important;
+    border-bottom: 1px solid var(--xy-border) !important;
+  }
+
+  .greedy-nav .hidden-links li:last-child {
+    border-bottom: none !important;
+  }
+
+  .greedy-nav .hidden-links a {
+    display: block !important;
+    padding: 0.82rem 1rem !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    line-height: 1.25 !important;
+    text-align: left !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    color: var(--xy-text) !important;
+    background-color: transparent !important;
+    white-space: nowrap !important;
+  }
+
+  .greedy-nav .hidden-links a:hover {
+    color: var(--xy-link-hover) !important;
+    background-color: var(--xy-surface-soft) !important;
   }
 }
-
 
 
 
