@@ -798,115 +798,48 @@ html {
 }
 
 
-
-
-
-
 /* ============================================================
-   Mobile navigation clean-up
+   Mobile dropdown menu fit adjustment
+   Keep the original Minimal Mistakes mobile button style,
+   only make the dropdown fully visible on small screens.
    ============================================================ */
 
 @media screen and (max-width: 768px) {
 
+  /* Keep enough room for the theme toggle on the right */
   .masthead__inner-wrap {
-    padding: 0.75rem 1rem !important;
-    padding-right: 5.8rem !important;
+    padding-right: 6.5rem !important;
   }
 
-  .greedy-nav {
-    display: flex !important;
-    align-items: center !important;
-    min-height: 3rem !important;
-    background: transparent !important;
+  /* Keep the original mobile menu button, only place it safely */
+  .greedy-nav > button:not(.hidden) {
+    right: 3.6rem !important;
+    z-index: 50 !important;
   }
 
-  .greedy-nav .site-title {
-    font-size: 1rem !important;
-    line-height: 1.2 !important;
-    margin-right: auto !important;
-    max-width: 58vw !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-  }
-
-  .greedy-nav .visible-links {
-    display: none !important;
-  }
-
-  .greedy-nav button {
-    position: absolute !important;
-    top: 50% !important;
-    right: 4.25rem !important;
-    transform: translateY(-50%) !important;
-
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-    padding: 0 !important;
-    margin: 0 !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    border: 1px solid var(--xy-toggle-border) !important;
-    border-radius: 999px !important;
-    background: var(--xy-toggle-bg) !important;
-    color: var(--xy-toggle-text) !important;
-
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
-    font-size: 0 !important;
-    line-height: 1 !important;
-    z-index: 40 !important;
-  }
-
-  .greedy-nav button::before {
-    content: "☰" !important;
-    font-size: 1.15rem !important;
-    line-height: 1 !important;
-    color: var(--xy-toggle-text) !important;
-  }
-
-  .site-theme-toggle {
-    right: 1rem !important;
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-    min-height: 2.25rem !important;
-    padding: 0 !important;
-    justify-content: center !important;
-    z-index: 45 !important;
-  }
-
-  .theme-toggle-label {
-    display: none !important;
-  }
-
-  #theme-icon {
-    font-size: 1rem !important;
-  }
-
+  /* Make the dropdown narrower and pull it slightly left */
   .greedy-nav .hidden-links {
     position: absolute !important;
-    top: calc(100% + 0.55rem) !important;
-    right: 1rem !important;
+    top: calc(100% + 0.45rem) !important;
+    right: 2.2rem !important;
     left: auto !important;
 
-    width: min(78vw, 300px) !important;
+    width: min(70vw, 280px) !important;
     min-width: 0 !important;
-    max-width: 300px !important;
+    max-width: calc(100vw - 3rem) !important;
 
     padding: 0.35rem 0 !important;
     border: 1px solid var(--xy-border) !important;
     border-radius: 14px !important;
-    background: var(--xy-surface) !important;
+    background-color: var(--xy-surface) !important;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16) !important;
     overflow: hidden !important;
     z-index: 99999 !important;
   }
 
-  .greedy-nav .hidden-links::before,
+  /* Keep the little triangle but align it with the button */
   .greedy-nav .hidden-links::after {
-    display: none !important;
+    right: 2.1rem !important;
   }
 
   .greedy-nav .hidden-links li {
@@ -921,163 +854,38 @@ html {
 
   .greedy-nav .hidden-links a {
     display: block !important;
-    padding: 0.85rem 1.1rem !important;
-    font-size: 0.98rem !important;
-    font-weight: 600 !important;
+    padding: 0.8rem 1rem !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
     line-height: 1.25 !important;
     text-align: left !important;
     text-transform: none !important;
     letter-spacing: 0 !important;
     color: var(--xy-text) !important;
-    background: transparent !important;
+    background-color: transparent !important;
+    white-space: nowrap !important;
   }
 
   .greedy-nav .hidden-links a:hover {
     color: var(--xy-link-hover) !important;
-    background: var(--xy-surface-soft) !important;
-  }
-}
-
-
-/* ============================================================
-   Mobile navigation clean-up
-   ============================================================ */
-
-@media screen and (max-width: 768px) {
-
-  .masthead__inner-wrap {
-    padding: 0.75rem 1rem !important;
-    padding-right: 5.8rem !important;
+    background-color: var(--xy-surface-soft) !important;
   }
 
-  .greedy-nav {
-    display: flex !important;
-    align-items: center !important;
-    min-height: 3rem !important;
-    background: transparent !important;
-  }
-
-  .greedy-nav .site-title {
-    font-size: 1rem !important;
-    line-height: 1.2 !important;
-    margin-right: auto !important;
-    max-width: 58vw !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-  }
-
-  /*.greedy-nav .visible-links {
-    display: none !important;
-  }*/
-
-  .greedy-nav button {
-    position: absolute !important;
-    top: 50% !important;
-    right: 4.25rem !important;
-    transform: translateY(-50%) !important;
-
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-    padding: 0 !important;
-    margin: 0 !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    border: 1px solid var(--xy-toggle-border) !important;
-    border-radius: 999px !important;
-    background: var(--xy-toggle-bg) !important;
-    color: var(--xy-toggle-text) !important;
-
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
-    font-size: 0 !important;
-    line-height: 1 !important;
-    z-index: 40 !important;
-  }
-
-  .greedy-nav button::before {
-    content: "☰" !important;
-    font-size: 1.15rem !important;
-    line-height: 1 !important;
-    color: var(--xy-toggle-text) !important;
-  }
-
+  /* Theme toggle stays at the far right */
   .site-theme-toggle {
-    right: 1rem !important;
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-    min-height: 2.25rem !important;
-    padding: 0 !important;
-    justify-content: center !important;
-    z-index: 45 !important;
+    right: 0.75rem !important;
+    z-index: 60 !important;
   }
 
   .theme-toggle-label {
     display: none !important;
-  }
-
-  #theme-icon {
-    font-size: 1rem !important;
-  }
-
-  .greedy-nav .hidden-links {
-    position: absolute !important;
-    top: calc(100% + 0.55rem) !important;
-    right: 1rem !important;
-    left: auto !important;
-
-    width: min(78vw, 300px) !important;
-    min-width: 0 !important;
-    max-width: 300px !important;
-
-    padding: 0.35rem 0 !important;
-    border: 1px solid var(--xy-border) !important;
-    border-radius: 14px !important;
-    background: var(--xy-surface) !important;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16) !important;
-    overflow: hidden !important;
-    z-index: 99999 !important;
-  }
-
-  .greedy-nav .hidden-links::before,
-  .greedy-nav .hidden-links::after {
-    display: none !important;
-  }
-
-  .greedy-nav .hidden-links li {
-    display: block !important;
-    width: 100% !important;
-    border-bottom: 1px solid var(--xy-border) !important;
-  }
-
-  .greedy-nav .hidden-links li:last-child {
-    border-bottom: none !important;
-  }
-
-  .greedy-nav .hidden-links a {
-    display: block !important;
-    padding: 0.85rem 1.1rem !important;
-    font-size: 0.98rem !important;
-    font-weight: 600 !important;
-    line-height: 1.25 !important;
-    text-align: left !important;
-    text-transform: none !important;
-    letter-spacing: 0 !important;
-    color: var(--xy-text) !important;
-    background: transparent !important;
-  }
-
-  .greedy-nav .hidden-links a:hover {
-    color: var(--xy-link-hover) !important;
-    background: var(--xy-surface-soft) !important;
   }
 }
 
 
 /* ============================================================
    Mobile page typography
+   Make centered pages easier to read on phones.
    ============================================================ */
 
 @media screen and (max-width: 768px) {
@@ -1121,147 +929,9 @@ html {
 
 
 
-/* ============================================================
-   Safer mobile navigation fix
-   ============================================================ */
 
-@media screen and (max-width: 768px) {
 
-  .masthead__inner-wrap {
-    padding: 0.75rem 1rem !important;
-    padding-right: 6.2rem !important;
-  }
 
-  .greedy-nav {
-    display: flex !important;
-    align-items: center !important;
-    min-height: 3rem !important;
-    background: transparent !important;
-  }
-
-  .greedy-nav .site-title {
-    font-size: 1rem !important;
-    line-height: 1.2 !important;
-    max-width: 55vw !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-  }
-
-  /* Force the Minimal Mistakes menu button to appear on mobile */
-  .greedy-nav > button {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-
-    position: absolute !important;
-    top: 50% !important;
-    right: 4.35rem !important;
-    transform: translateY(-50%) !important;
-
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-    padding: 0 !important;
-    margin: 0 !important;
-
-    align-items: center !important;
-    justify-content: center !important;
-
-    border: 1px solid var(--xy-toggle-border) !important;
-    border-radius: 999px !important;
-    background: var(--xy-toggle-bg) !important;
-    color: var(--xy-toggle-text) !important;
-
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
-    z-index: 50 !important;
-  }
-
-  /* Hide the original broken icon */
-  .greedy-nav > button svg,
-  .greedy-nav > button .navicon {
-    display: none !important;
-  }
-
-  /* Add a clean hamburger icon */
-  .greedy-nav > button::before {
-    content: "☰" !important;
-    font-size: 1.15rem !important;
-    line-height: 1 !important;
-    color: var(--xy-toggle-text) !important;
-  }
-
-  /* Theme button */
-  .site-theme-toggle {
-    right: 1rem !important;
-    width: 2.25rem !important;
-    height: 2.25rem !important;
-    min-height: 2.25rem !important;
-    padding: 0 !important;
-    justify-content: center !important;
-    z-index: 55 !important;
-  }
-
-  .theme-toggle-label {
-    display: none !important;
-  }
-
-  #theme-icon {
-    font-size: 1rem !important;
-  }
-
-  /* Dropdown menu */
-  .greedy-nav .hidden-links {
-    position: absolute !important;
-    top: calc(100% + 0.55rem) !important;
-    right: 1rem !important;
-    left: auto !important;
-
-    width: min(78vw, 300px) !important;
-    min-width: 0 !important;
-    max-width: 300px !important;
-
-    padding: 0.35rem 0 !important;
-    border: 1px solid var(--xy-border) !important;
-    border-radius: 14px !important;
-    background: var(--xy-surface) !important;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16) !important;
-    overflow: hidden !important;
-    z-index: 99999 !important;
-  }
-
-  .greedy-nav .hidden-links::before,
-  .greedy-nav .hidden-links::after {
-    display: none !important;
-  }
-
-  .greedy-nav .hidden-links li {
-    display: block !important;
-    width: 100% !important;
-    border-bottom: 1px solid var(--xy-border) !important;
-  }
-
-  .greedy-nav .hidden-links li:last-child {
-    border-bottom: none !important;
-  }
-
-  .greedy-nav .hidden-links a {
-    display: block !important;
-    padding: 0.85rem 1.1rem !important;
-    font-size: 0.98rem !important;
-    font-weight: 600 !important;
-    line-height: 1.25 !important;
-    text-align: left !important;
-    text-transform: none !important;
-    letter-spacing: 0 !important;
-    color: var(--xy-text) !important;
-    background: transparent !important;
-  }
-
-  .greedy-nav .hidden-links a:hover {
-    color: var(--xy-link-hover) !important;
-    background: var(--xy-surface-soft) !important;
-  }
-}
 
 
 </style>
