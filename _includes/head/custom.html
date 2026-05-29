@@ -847,41 +847,26 @@ html {
 
 
 /* ============================================================
-   Final mobile navigation style
-   Menu button matches theme toggle and sits close to it
+   Mobile buttons: menu button matches theme toggle pill style
    ============================================================ */
 
 @media screen and (max-width: 768px) {
 
   .masthead__inner-wrap {
-    padding-right: 6rem !important;
+    padding-right: 6.2rem !important;
   }
 
-  .greedy-nav {
-    display: flex !important;
-    align-items: center !important;
-    min-height: 3rem !important;
-    background: transparent !important;
-  }
-
-  .greedy-nav .site-title {
-    max-width: 58vw !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-  }
-
-  /* Theme toggle: far right */
+  /* Theme toggle: keep pill shape */
   .site-theme-toggle {
     position: absolute !important;
     top: 50% !important;
-    right: 0.85rem !important;
+    right: 0.9rem !important;
     transform: translateY(-50%) !important;
 
-    width: 2.35rem !important;
-    height: 2.35rem !important;
-    min-width: 2.35rem !important;
-    min-height: 2.35rem !important;
+    width: 2.75rem !important;
+    height: 2.15rem !important;
+    min-width: 2.75rem !important;
+    min-height: 2.15rem !important;
 
     padding: 0 !important;
     display: inline-flex !important;
@@ -905,7 +890,7 @@ html {
     font-size: 1.05rem !important;
   }
 
-  /* Menu button: immediately to the left of theme toggle */
+  /* Menu button: same pill shape as theme toggle */
   .greedy-nav > button {
     display: flex !important;
     visibility: visible !important;
@@ -913,16 +898,14 @@ html {
 
     position: absolute !important;
     top: 50% !important;
-
-    /* theme right + theme width + small gap */
-    right: calc(0.85rem + 2.35rem + 0.18rem) !important;
-
+    /* right: calc(0.9rem + 2.75rem + 0.25rem) !important; */
+    right: calc(0.9rem + 2.75rem + 0.12rem) !important;
     transform: translateY(-50%) !important;
 
-    width: 2.35rem !important;
-    height: 2.35rem !important;
-    min-width: 2.35rem !important;
-    min-height: 2.35rem !important;
+    width: 2.75rem !important;
+    height: 2.15rem !important;
+    min-width: 2.75rem !important;
+    min-height: 2.15rem !important;
 
     padding: 0 !important;
     margin: 0 !important;
@@ -940,7 +923,7 @@ html {
     z-index: 55 !important;
   }
 
-  /* Hide original Minimal Mistakes navicon */
+  /* Hide original Minimal Mistakes hamburger */
   .greedy-nav > button .navicon,
   .greedy-nav > button .navicon::before,
   .greedy-nav > button .navicon::after,
@@ -959,7 +942,7 @@ html {
   .greedy-nav > button::before {
     content: "☰" !important;
     display: block !important;
-    font-size: 1.22rem !important;
+    font-size: 1.18rem !important;
     font-weight: 700 !important;
     line-height: 1 !important;
     color: var(--xy-toggle-text) !important;
@@ -976,62 +959,7 @@ html {
     outline: 2px solid var(--xy-link) !important;
     outline-offset: 2px !important;
   }
-
-  /* Dropdown menu */
-  .greedy-nav .hidden-links {
-    position: absolute !important;
-    top: calc(100% + 0.5rem) !important;
-    right: 1rem !important;
-    left: auto !important;
-
-    width: min(72vw, 290px) !important;
-    min-width: 0 !important;
-    max-width: calc(100vw - 2rem) !important;
-
-    padding: 0.35rem 0 !important;
-    border: 1px solid var(--xy-border) !important;
-    border-radius: 14px !important;
-    background-color: var(--xy-surface) !important;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16) !important;
-    overflow: hidden !important;
-    z-index: 99999 !important;
-  }
-
-  .greedy-nav .hidden-links::before,
-  .greedy-nav .hidden-links::after {
-    display: none !important;
-  }
-
-  .greedy-nav .hidden-links li {
-    display: block !important;
-    width: 100% !important;
-    border-bottom: 1px solid var(--xy-border) !important;
-  }
-
-  .greedy-nav .hidden-links li:last-child {
-    border-bottom: none !important;
-  }
-
-  .greedy-nav .hidden-links a {
-    display: block !important;
-    padding: 0.82rem 1rem !important;
-    font-size: 0.95rem !important;
-    font-weight: 500 !important;
-    line-height: 1.25 !important;
-    text-align: left !important;
-    text-transform: none !important;
-    letter-spacing: 0 !important;
-    color: var(--xy-text) !important;
-    background-color: transparent !important;
-    white-space: nowrap !important;
-  }
-
-  .greedy-nav .hidden-links a:hover {
-    color: var(--xy-link-hover) !important;
-    background-color: var(--xy-surface-soft) !important;
-  }
 }
-
 
 
 
