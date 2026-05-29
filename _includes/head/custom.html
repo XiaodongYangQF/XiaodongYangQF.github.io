@@ -928,6 +928,86 @@ html {
 }
 
 
+/* ============================================================
+   Final mobile hamburger icon fix
+   Keep existing dropdown style, only fix the incomplete icon
+   ============================================================ */
+
+@media screen and (max-width: 768px) {
+
+  /* Keep the mobile menu button visible and aligned */
+  .greedy-nav > button {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: absolute !important;
+    top: 50% !important;
+    right: 4.25rem !important;
+    transform: translateY(-50%) !important;
+
+    width: 2.35rem !important;
+    height: 2.35rem !important;
+    min-width: 2.35rem !important;
+    min-height: 2.35rem !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    /* border: none !important;
+    border-radius: 0 !important; */
+    border: 1px solid var(--xy-toggle-border) !important;
+    border-radius: 999px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+
+    z-index: 50 !important;
+  }
+
+  /* Completely remove the original Minimal Mistakes navicon */
+  .greedy-nav > button .navicon,
+  .greedy-nav > button .navicon::before,
+  .greedy-nav > button .navicon::after,
+  .greedy-nav > button svg,
+  .greedy-nav > button i {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    /* background: transparent !important; */
+    background: var(--xy-toggle-bg) !important;
+    content: none !important;
+  }
+
+  /* Replace it with a clean hamburger icon */
+  .greedy-nav > button::before {
+    content: "☰" !important;
+    display: block !important;
+
+    font-size: 1.85rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+
+    color: var(--xy-muted) !important;
+    /* background: transparent !important; */
+    background: var(--xy-toggle-bg) !important;
+  }
+
+  html.dark-mode .greedy-nav > button::before {
+    color: var(--xy-text) !important;
+  }
+
+  /* Keep the theme button on the far right */
+  .site-theme-toggle {
+    right: 1rem !important;
+    z-index: 55 !important;
+  }
+}
+
 
 
 
