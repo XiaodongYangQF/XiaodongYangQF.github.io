@@ -58,7 +58,7 @@ toc: false
       </div>
     </article>
 
-    <article class="tool-card featured-tool">
+    <article class="tool-card">
       <div class="tool-icon">📚</div>
       <div class="tool-tag">Research Workflow</div>
       <h2>BibFlow</h2>
@@ -82,7 +82,7 @@ toc: false
       </div>
     </article>
 
-    <article class="tool-card">
+    <article class="tool-card featured-tool">
       <div class="tool-icon">⚽</div>
       <div class="tool-tag">Sports Analytics · Streamlit</div>
       <h2>Football Market Analytics Dashboard</h2>
