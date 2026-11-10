@@ -17,7 +17,7 @@ toc: false
     <p>
       A collection of browser-based and Python-powered tools for exploring
       option pricing, Greeks, payoff profiles, market-implied information,
-      research workflows, and applied probability models.
+      research workflows, and sports market analytics.
     </p>
   </section>
 
@@ -82,16 +82,25 @@ toc: false
       </div>
     </article>
 
-    <article class="tool-card tool-card-muted">
+    <article class="tool-card">
       <div class="tool-icon">⚽</div>
-      <div class="tool-tag">Sports Analytics</div>
-      <h2>Late Goal Probability Dashboard</h2>
+      <div class="tool-tag">Sports Analytics · Streamlit</div>
+      <h2>Football Market Analytics Dashboard</h2>
       <p>
-        A research prototype for estimating late-goal probabilities using
-        in-play Asian over/under lines, handicap lines, odds, and match state.
+        Explore historical Asian Handicap and Asian Total forecasts, settlement outcomes,
+        simulated returns, and market-level performance through interactive charts
+        and a searchable fixture ledger.
       </p>
+      <div class="tool-meta">
+        Python · Streamlit · Football Markets · Historical Research
+      </div>
       <div class="tool-actions">
-        <span class="tool-button disabled">Coming soon →</span>
+        <a class="tool-button" href="https://football-market-analytics.streamlit.app/" target="_blank" rel="noopener noreferrer">
+          Launch live dashboard →
+        </a>
+        <a class="tool-link" href="https://github.com/XiaodongYangQF/football-market-analytics-public" target="_blank" rel="noopener noreferrer">
+          Source code
+        </a>
       </div>
     </article>
 

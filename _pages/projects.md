@@ -15,7 +15,7 @@ author_profile: false
 <div class="project-page-intro">
   <p>
     This page highlights selected research-oriented and applied projects in quantitative finance,
-    derivatives pricing, risk management, financial data analytics, and research workflow tools.
+    derivatives pricing, risk management, sports market analytics, and applied research tools.
   </p>
 </div>
 
@@ -41,19 +41,20 @@ author_profile: false
   </div>
 
   <div class="project-card featured-project">
-    <div class="project-badge">Research Workflow</div>
-    <h3>BibFlow</h3>
+    <div class="project-badge">Sports Analytics</div>
+    <h3>Football Market Analytics</h3>
     <p>
-      A research workflow project for managing academic references, cleaning BibTeX entries,
-      retrieving DOI metadata, and supporting a more reproducible literature-management process.
+      An applied quantitative research project examining Asian Handicap and Asian Total
+      football markets through market-based forecasts, rule-based signal interpretation,
+      settlement verification, and simulated performance evaluation.
     </p>
     <p class="project-keywords">
-      BibTeX · DOI metadata · Reference cleaning · Research workflow · Academic writing
+      Market forecasting · Strategy evaluation · Python · Streamlit · Research dashboard
     </p>
-    <p class="project-status">Status: Active research workflow project</p>
+    <p class="project-status">Status: Active quantitative research project</p>
     <div class="project-links">
-      <a href="https://github.com/XiaodongYangQF/bibflow-streamlit" class="project-button project-button-primary">View project</a>
-      <a href="https://github.com/XiaodongYangQF/bibflow-streamlit" class="project-button project-button-secondary">Demo / tutorial</a>
+      <a href="https://football-market-analytics.streamlit.app/" class="project-button project-button-primary" target="_blank" rel="noopener noreferrer">Live research dashboard</a>
+      <a href="https://github.com/XiaodongYangQF/football-market-analytics-public" class="project-button project-button-secondary" target="_blank" rel="noopener noreferrer">GitHub repository</a>
     </div>
   </div>
 
